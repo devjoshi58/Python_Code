@@ -22,28 +22,28 @@ def guess(x):
 
 def computer_guess(x):
 
-    user_number = x
-    computer_number = 0
+    feedback = ' '
+    #computer_number = 0
     high =x
     low =1 
 
-    while user_number != computer_number:
-        print(f"{computer_number} is Wrong choice, guess again")
+    while feedback != 'c':
+        
         if low!=high:
             computer_number = random.randint(low,high) # randint gives error when low and high are same
         else:
             computer_number = high # could be low as well as high = low
-
-        if computer_number > user_number:
-            print(f"{computer_number} too high")
-            high = computer_number-1
         
-        elif computer_number < user_number:
-            print(f"{computer_number} too low")
-            low = computer_number+1
+        print(f"{computer_number}")
+        feedback = input(f"if the number is high then (h) or if the number is low then (l) or if the guess is correct then c :: ").lower()
         
-    
-    print(f"Computer guessed it right, the number is {computer_number}")
+        if feedback == 'l':
+            low+=1
+        elif feedback == 'h':
+            high-=1
 
-computer_guess(7)
+        
+    print(f"Computer guessed it right")
+
+computer_guess(100)
 
