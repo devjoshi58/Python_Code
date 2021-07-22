@@ -24,7 +24,7 @@ def computer_guess(x):
 
     user_number = x
     computer_number = 0
-    high =10
+    high =x
     low =1 
 
     while user_number != computer_number:
