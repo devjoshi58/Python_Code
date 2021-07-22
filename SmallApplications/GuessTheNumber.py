@@ -18,4 +18,29 @@ def guess(x):
     
     print(f"Congrats you got the number right, which is {user_number}")
 
-guess(10)
+#guess(10)
+
+def computer_guess(x):
+
+    user_number = x
+    computer_number = 0
+    high =10
+    low =1 
+
+    while user_number != computer_number:
+        print(f"{computer_number} is Wrong choice, guess again")
+        computer_number = random.randint(low,high)
+
+        if computer_number > user_number:
+            print(f"{computer_number} too high")
+            high = computer_number-1
+        
+        elif computer_number < user_number:
+            print(f"{computer_number} too low")
+            low = computer_number+1
+        
+    
+    print(f"Computer guessed it right, the number is {computer_number}")
+
+computer_guess(7)
+
