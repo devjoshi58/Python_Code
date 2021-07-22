@@ -29,7 +29,10 @@ def computer_guess(x):
 
     while user_number != computer_number:
         print(f"{computer_number} is Wrong choice, guess again")
-        computer_number = random.randint(low,high)
+        if low!=high:
+            computer_number = random.randint(low,high) # randint gives error when low and high are same
+        else:
+            computer_number = high # could be low as well as high = low
 
         if computer_number > user_number:
             print(f"{computer_number} too high")
