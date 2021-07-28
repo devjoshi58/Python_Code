@@ -7,7 +7,7 @@ Python’s namedtuple() is a factory function available in collections.
 like in obj.attr.
 Python’s namedtuple was created to improve code readability by providing a way to access values using
  descriptive field names instead of integer indices, which most of the time don’t provide any
-  context on what the values are. This feature also makes the code cleaner and more maintainable.
+context on what the values are. This feature also makes the code cleaner and more maintainable.
 """
 
 from collections import namedtuple
