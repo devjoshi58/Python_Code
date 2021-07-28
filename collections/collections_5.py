@@ -1,4 +1,4 @@
-#Deque -double ended queue use to remove or add elements from both sides
+#Deque -double ended queue use to remove or add elements from both sides--
 
 from typing import Deque
 
