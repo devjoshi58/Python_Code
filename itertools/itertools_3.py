@@ -6,7 +6,8 @@ a=[4,1,2,3,4,7]
 
 acc = accumulate(a) #By default the operator here is sum
 print(list(acc))
-#[1,3,6,10]
+#[4, 5, 7, 10, 14, 21]
+
 
 #To use any other operator other than default sum
 
