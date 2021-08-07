@@ -3,7 +3,7 @@ import json
 
 person = {"name":"John","age":30,"city":"New York","hasChildren": False,"titles":['Programmer','Manager']}
 
-personJson = json.dumps(person,indent=4,sort_keys=True)
+personJson = json.dumps(person,indent=4,sort_keys=True) #Serialization
 
 print(personJson)
 print(type(personJson))
