@@ -19,6 +19,7 @@ with open('person.json','w') as f:
 
 person_dict = json.loads(personJson)
 print(person_dict)
+print(type(person_dict))
 
 
 #Read from json file
