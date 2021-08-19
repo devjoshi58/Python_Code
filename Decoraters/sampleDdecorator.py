@@ -1,5 +1,9 @@
 #Sample Decorator
-
+"""
+a decorator is a 
+function that takes another function and 
+extends the behavior of the latter function without explicitly modifying it.
+"""
 def mydecorator(func):
 
     def wrapper():
