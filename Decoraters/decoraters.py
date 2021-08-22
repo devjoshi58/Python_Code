@@ -35,3 +35,12 @@ def add(x):
 
 value = add(5)
 print(value)
+
+
+def dotwice(func):
+
+    def wrapper_do_twice():
+        func()
+        func()
+    return wrapper_do_twice
+
