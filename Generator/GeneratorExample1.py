@@ -24,4 +24,4 @@ def infinitenumbers():
         num+=1
 
 for i in infinitenumbers():
-    print
+    print(i)
