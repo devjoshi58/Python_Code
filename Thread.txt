@@ -1,0 +1,13 @@
+Thread: Entity with in the process that can be scheduled
+
+A process can spawn multiple threads
+
++ All threads within a process share same memory.
++ Lightweight
++ Starting a thread is faster than starting a process.
++ Great for I/O bound task(when interactin with disk)
+
+- Only one thread allowed as per GIL
+- Not killable or interruptable
+- No effect for CPU bound task
+- careful with race condition

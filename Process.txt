@@ -1,0 +1,13 @@
+Process: An instance of  a program
+
++ Takes advantage of different CPU's and Programs.
++ Memory is not shared between processes
++ Great for CPU bound processing
++ New process is started Independently of other processes
++ killable/interruptable
++ One GIL for each process
+
+- Takes more time to start than a thread.
+- Heavyweight and takes more Memory
+- More Memory
+- IPC Intra process communication is complicated.

@@ -1,0 +1,10 @@
+Global intepreter lock
+
+- A lock that allows only 1 thread.
+- Needed in C Python because memory management is Not thread safe.
+
+How to avoid -
+
+- Use multiprocessing
+- Use a different python implementation like Jython or Ironpython
+- use python as wrapper for third party library
