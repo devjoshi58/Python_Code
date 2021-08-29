@@ -8,7 +8,7 @@ import time
 def squarenum():
 
     for i in range(10):
-        i*i
+        print(i*i)
         time.sleep(0.5)
 
 if __name__ == "__main__":
