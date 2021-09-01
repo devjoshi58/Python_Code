@@ -13,17 +13,20 @@ if __name__ == "__main__":
 
     q = Queue()
     lock = Lock()
-    num_threads = 2
+    num_threads = 7
 
     for i in range(num_threads):
         thread = Thread(target=worker,args=(q,lock))
-        Thread.daemon = True
+        Thread.daemon = True #Threads that are daemons, however, are just killed wherever they 
+                                #are when the program is exiting.
+
+
         thread.start()
     
-    for i in range(1,5):
+    for i in range(1,25):
         q.put(i)
     
-    q.join() #lock the main thread and wait until all the items have been processed
+    q.join() #To tell one thread to wait for another thread to finish, you call .join().
 
     print("end main")
 
