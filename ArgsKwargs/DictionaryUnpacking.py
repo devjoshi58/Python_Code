@@ -13,3 +13,8 @@ def dictunpack(**kwargs):
 mydict1 = {'a':1,'b':2,'c':3} 
 
 dictunpack(**mydict1)
+
+mydict2= {1:'a',2:'b',3:'c'}
+*key1,lastkey = mydict2
+print(key1) #list of keys
+print(lastkey)

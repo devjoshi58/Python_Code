@@ -20,5 +20,12 @@ mylist1=[1,2,3,4]
 mylist2=[2,3,4,5,6]
 foo(*mylist1,*mylist2)
 
+#List unpacking
 
+mylist = [1,2,3,4,5]
+*beginning,last = mylist
+print(beginning) #[1,2,3,4]
+print(last) #5
+
+#beg,*middle,*rightmiddle,last = mylist - this is no correct only one unpack operation is allowed
 
