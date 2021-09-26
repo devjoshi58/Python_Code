@@ -11,6 +11,7 @@ foo(*mytuple)
 
 def foo(*args):
     result = 0
+    print(args) #(1, 2, 3, 4, 2, 3, 4, 5, 6)
     for arg in args:
         result = result+arg
     print(result)
