@@ -7,6 +7,10 @@ def binarySearch(list_of_numbers,num):
         mid = (hi+lo)//2
         print(f'mid: {mid} hi: {hi} lo: {lo}')
         if num == list_of_numbers[mid]:
+            while list_of_numbers[mid]== list_of_numbers[mid-1] and mid!=0: 
+                #getting the left most when 
+                #dups are present for the number that we are searching
+                mid = mid-1
             print(f"found {num} at {mid}")
             return num
         
@@ -28,7 +32,8 @@ if __name__ == "__main__":
 
     inputs = [{"numlist":[8,7,6,4,3,2],"num":7},
     {"numlist":[8,7,6,4,3,2],"num":3},
-    {"numlist":[8,7,6,6,6,2,9],"num":6}]
+    {"numlist":[8,7,6,6,6,2,9],"num":6},
+    {"numlist":[6,6,6,6,6,6,2,9],"num":6}]
     
     evaluateTests(inputs,binarySearch)
     #binarySearch(inputs[0]["numlist"],inputs[0]["num"])
