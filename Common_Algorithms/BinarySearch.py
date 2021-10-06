@@ -1,3 +1,13 @@
+#First iteration N/2 --LENGTH GETS HALVED
+#Second N/4 --- FURTHER HALVED
+#ITERATION K...N/2^k
+#Finally length is 1 hence N/2^k = 1
+# N = 2^k
+# LOG(N) = LOG(2^k )
+# log(N) = k
+
+
+#O(log N)
 def binarySearch(list_of_numbers,num):
 
     lo = 0
