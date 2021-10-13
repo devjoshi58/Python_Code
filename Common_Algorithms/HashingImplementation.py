@@ -1,5 +1,5 @@
 #Hashing
-
+#This doesnt take care of collisions
 
 class basicHashTable():
 
@@ -56,12 +56,15 @@ if __name__ == "__main__":
     idx =getIndex(data_list,"Varun")
     data_list[idx]=("Varun",'813')
     print(idx)
+    data_list[idx]=("nurav",'813')
+    
+    print(idx)
     print(data_list[idx][0]) 
 
     obj1 = basicHashTable(50)
     obj1.insert('varun','8139986828')
     obj1.insert('joshi','816828')
-    obj1.insert('ron','81396828')
+    obj1.insert('nurav','81396828')
 
     res_key,res_value = obj1.find('varun')
     print(res_key,res_value)
