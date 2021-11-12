@@ -1,3 +1,5 @@
+#QuickSort - O(nlogn)
+
 def partition(nums,low,high):
 
     pivot = nums[low]
