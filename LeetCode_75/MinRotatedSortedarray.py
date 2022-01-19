@@ -30,3 +30,5 @@ minRotatedSortedArray([4,5,6,7,0,1,2])
 minRotatedSortedArray([11,13,15,17])
 #wac2190086800
 #[6,1,2,3,4,5]
+#[4,5,6,7]
+#[7,6,4,5]
