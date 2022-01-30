@@ -23,7 +23,7 @@ def getevent():
             if 'dut: Device State:' in line:
                 status = line.split()[-1]
                 time = line[:19]
-                yield (status,time)
+                yield (status,time) #get one item at a time
 
 def extractTime():
     IsDeviceOn = False
