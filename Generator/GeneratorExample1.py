@@ -10,7 +10,7 @@ def csv_reader(file):
 
 csv_gen = csv_reader("/Users/varunjoshi/Downloads/some_csv.txt")
 count = 0
-for row in csv_gen: #Reads row one by one and doesnt load all the data into memory at once
+for row in csv_reader("/Users/varunjoshi/Downloads/some_csv.txt"): #Reads row one by one and doesnt load all the data into memory at once
     count+=1
 
 print(count)

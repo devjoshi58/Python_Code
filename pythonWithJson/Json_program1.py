@@ -12,7 +12,7 @@ json_example = """{"menu": {
   }
 }}"""
 
-menu = json.loads(json_example) #string to json object using loads
+menu = json.loads(json_example) #json string to python object using loads
 
 print(menu)
 

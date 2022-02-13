@@ -1,5 +1,8 @@
 #lambda argument : expression
 
+from audioop import reverse
+
+
 add10 = lambda x: x+10
 print(add10(5))
 
@@ -34,3 +37,8 @@ print(points_2d_sorted_by_2nd)
 
 points_2d_sorted_by_sum = sorted(points_2d,key= lambda x:x[1]+x[0],reverse=True)
 print(points_2d_sorted_by_sum)
+
+#sort by multiplication of each tuple
+
+points_2d_sorted_by_multiplication = sorted(points_2d,key = lambda x:x[0]*x[1])
+print(points_2d_sorted_by_multiplication)
