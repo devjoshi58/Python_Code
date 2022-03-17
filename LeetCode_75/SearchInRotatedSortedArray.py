@@ -46,4 +46,4 @@ def UsingBinarySearch(nums,target):
     print(-1)
     return
 nums2 =  [4,5,6,7,0,1,2]
-UsingBinarySearch(nums2,56)
+UsingBinarySearch(nums2,0)
